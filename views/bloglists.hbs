@@ -1,0 +1,25 @@
+{{#each go}}
+
+
+
+
+    <div class="card-container">
+        <div class="container">
+
+
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p class="card-text">{{this.title}}</p>
+
+                        <p class="card-text"> {{this.description}}</p>
+                        <a class="btn btn-primary btn-lg" href="/editblog/{{this.id}}" role="button"><i class="fa fa-info"></i> &nbsp; Edit </a>
+                        <a class="btn btn-primary btn-lg" href="/delete/{{this.id}}" role="button"><i class="fa fa-info"></i> &nbsp; Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
